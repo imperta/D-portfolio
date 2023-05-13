@@ -6,58 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/content.css" />
+    <link rel="stylesheet" href="../styles/media_fixcontent.css" />
     <link rel="stylesheet" href="../sources/fonts/stylesheet.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    </script>
     <title>My portfolio</title>
 </head>
 
 <body>
-    <header class="navbar sticky z-10">
-        <div
-          class="fixed bottom-0 grid w-full grid-cols-1 px-8 md:grid-cols-3 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-30"
-        >
-          <div class="items-center justify-center mr-auto md:flex">
-            <a href="./index.html"><span class="text-s">Diego Pertuz</span></a>
-          </div>
-          <div class="flex items-center justify-center mx-auto whitespace-nowrap">
-            <button
-              type="button"
-              class="p-2.5 group rounded-full mr-3 "
-            >
-            <a href="./aboutme.html">
-                <span>About me</span>
-              </a>
-            </button>
-            <button
-              type="button"
-              class="p-2 group rounded-full text-gray-500 mr-3 underline underline-offset-8"
-            >
-              <span>Proyects</span>
-            </button>
-            <button
-              type="button"
-              class="p-2 group rounded-full hover:text-gray-200 mr-3"
-            >
-              <a href="./contact.html"><span>Contact</span></a>
-            </button>
-            <button
-              type="button"
-              class="p-2 group rounded-full hover:text-gray-200 mr-3"
-            >
-              <a href="./aboutme.html#content-tech-section">
-                <span>Technologies</span>
-              </a>
-            </button>
-            <button
-              type="button"
-              class="p-2 group rounded-full hover:text-gray-200"
-            >
-              <a href="./wits.html"><span>¿What is this?</span></a>
-            </button>
-          </div>
+  <header class="navbar sticky z-10 flex">
+    <div
+      class="fixed bottom-0 grid md:grid-cols-1 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 w-full"
+    >
+      <div class="flex nav-prop items-center justify-center">
+        <div class="buttons-nav whitespace-nowrap p-4">
+          <button type="button" class="group mr-4">
+            <a href="../index.html">
+              <span class="text-gray-500 text-s flex b-text-s"
+                >Diego Pertuz</span
+              >
+            </a>
+          </button>
+          <button
+            type="button"
+            class="group rounded-full hover:text-gray-200 mr-4"
+          >
+            <a href="./html/aboutme.html">
+              <span>About me</span>
+            </a>
+          </button>
+          <button
+            type="button"
+            class="group rounded-full hover:text-gray-200 mr-4"
+            disabled
+          >
+          <span>Proyects</span>
+          </button>
+          <button
+            type="button"
+            class="group rounded-full hover:text-gray-200 mr-4"
+          >
+            <a href="./contact.html">
+              <span>Contact</span>
+            </a>
+          </button>
+          <button
+            type="button"
+            class="group rounded-full hover:text-gray-200"
+          >
+            <a href="./wits.html"><span>¿What is this?</span></a>
+          </button>
         </div>
-      </header>
+      </div>
+    </div>
+  </header>
       <div class="content">
         <main>
           <div class="background-content background-content-p">
@@ -78,7 +79,6 @@
                     
 
 
-                </section>
 
                 <!-- <footer>
                     Made by Diego Pertuz

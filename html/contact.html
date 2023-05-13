@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/media_fixmain.css" />
+    <link rel="stylesheet" href="../styles/media_fixcontent.css" />
     <link rel="stylesheet" href="../sources/fonts/stylesheet.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>My portfolio</title>
@@ -16,7 +18,7 @@
         class="fixed bottom-0 grid w-full grid-cols-1 px-8 md:grid-cols-3 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-30"
       >
         <div class="items-center justify-center mr-auto md:flex text-gray-500">
-          <a href="./index.html"><span class="text-s">Diego Pertuz</span></a>
+          <a href="../index.html"><span class="text-s">Diego Pertuz</span></a>
         </div>
         <div class="flex items-center justify-center mx-auto whitespace-nowrap">
           <button
@@ -36,20 +38,15 @@
           <button
             type="button"
             class="p-2 group rounded-full hover:text-gray-200 mr-4"
+            disabled
           >
             <span>Contact</span>
           </button>
           <button
             type="button"
-            class="p-2 group rounded-full hover:text-gray-200 mr-4"
-          >
-            <span>Technologies</span>
-          </button>
-          <button
-            type="button"
             class="p-2 group rounded-full hover:text-gray-200"
           >
-            <span>¿What is this?</span>
+            <a href="./wits.html"><span>¿What is this?</span></a>
           </button>
         </div>
       </div>

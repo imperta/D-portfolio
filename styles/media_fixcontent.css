@@ -1,0 +1,264 @@
+/*              Tamaño de pantallas  DE MAYOR A MENOR   (contenido de otras pestañas)          */
+@media only screen and (max-width: 1600px) {
+  .content {
+    width: 85%;
+  }
+  .background-content h1 {
+    margin-top: 2rem;
+    line-height: 100%;
+    font-size: 5rem;
+  }
+  .background-content p {
+    padding-top: 2rem;
+    padding-right: 2rem;
+  }
+
+  footer {
+    opacity: 0.6;
+    font-size: 1rem;
+    margin-top: 10rem;
+    z-index: 100;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .content {
+    width: 90%;
+  }
+  .background-content h1 {
+    margin-top: 2rem;
+    line-height: 100%;
+    font-size: 5rem;
+  }
+  .background-content p {
+    padding-top: 2rem;
+    padding-right: 2rem;
+  }
+  .background-content h2 {
+    margin-top: 2rem;
+    font-family: "kyivtype_sansbold";
+    font-size: 2.5rem;
+  }
+
+  .p-info {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 0.7rem;
+    text-align: left;
+  }
+  .p-info-sub {
+    margin-right: 2rem;
+    text-align: left;
+  }
+
+  footer {
+    opacity: 0.6;
+    font-size: 1rem;
+    margin-top: 10rem;
+    z-index: 100;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .content {
+    width: 95%;
+  }
+  .background-content h1 {
+    margin-top: 2rem;
+    line-height: 100%;
+    font-size: 5rem;
+  }
+  .background-content p {
+    padding-top: 2rem;
+    padding-right: 2rem;
+  }
+  .background-content h2 {
+    margin-top: 2rem;
+    font-family: "kyivtype_sansbold";
+    font-size: 2.5rem;
+  }
+
+  .p-info {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 0.7rem;
+    text-align: left;
+  }
+  .p-info-sub {
+    margin-right: 2rem;
+    text-align: left;
+  }
+
+  footer {
+    opacity: 0.6;
+    font-size: 1rem;
+    margin-top: 10rem;
+    z-index: 100;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .background-content {
+    padding: 3rem;
+    height: 8%;
+    font-size: 1.5rem;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .content {
+    width: 90%;
+  }
+  .background-content h1 {
+    margin-top: 2rem;
+    line-height: 100%;
+    font-size: 4rem;
+  }
+  .background-content p {
+    padding-top: 0.6rem;
+    padding-right: 0.6rem;
+  }
+  .background-content h2 {
+    margin-top: 2rem;
+    font-family: "kyivtype_sansbold";
+    font-size: 2.5rem;
+  }
+
+  .p-info {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 0.7rem;
+    text-align: left;
+  }
+  .p-info-sub {
+    margin-right: 2rem;
+    text-align: left;
+  }
+
+  footer {
+    opacity: 0.6;
+    font-size: 1rem;
+    margin-top: 10rem;
+    z-index: 100;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 661px) {
+  .background-content {
+    padding: 1rem;
+    height: 8%;
+    font-size: 1.5rem;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .content {
+    width: 90%;
+  }
+  .background-content h1 {
+    margin-top: 1rem;
+    line-height: 100%;
+    font-size: 3rem;
+  }
+  .background-content p {
+    padding-top: 0.6rem;
+    padding-right: 0.6rem;
+  }
+  .background-content h2 {
+    margin-top: 2rem;
+    font-family: "kyivtype_sansbold";
+    font-size: 2rem;
+  }
+
+  .p-info {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 0.7rem;
+    text-align: left;
+  }
+  .p-info-sub {
+    margin-right: 2rem;
+    text-align: left;
+  }
+
+  footer {
+    opacity: 0.6;
+    font-size: 1rem;
+    margin-top: 10rem;
+    z-index: 100;
+    text-align: center;
+  }
+  .button-example {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 7rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    transition: opacity 0.5s;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .background-content {
+    padding: 1rem;
+    height: 8%;
+    font-size: 1.5rem;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .content {
+    width: 90%;
+  }
+  .background-content h1 {
+    margin-top: 1rem;
+    line-height: 100%;
+    font-size: 3rem;
+  }
+  .background-content p {
+    padding-top: 0.6rem;
+    padding-right: 0.6rem;
+  }
+  .background-content h2 {
+    margin-top: 2rem;
+    font-family: "kyivtype_sansbold";
+    font-size: 1.5rem;
+  }
+
+  .p-info {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: 0.7rem;
+    text-align: left;
+  }
+  .p-info-sub {
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    text-align: left;
+  }
+
+  footer {
+    opacity: 0.6;
+    font-size: 1rem;
+    margin-top: 10rem;
+    z-index: 100;
+    text-align: center;
+  }
+  .button-example {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 7rem;
+    width: 100%;
+  }
+  .button-pattern {
+    padding: 2rem;
+    width: 100%;
+    margin-bottom: 0rem;
+    margin-top: 3rem;
+  }
+}
