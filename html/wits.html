@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/content.css" />
+    <link rel="stylesheet" href="../sources/fonts/stylesheet.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>My portfolio</title>
+  </head>
+
+  <body>
+    <header class="navbar sticky z-10">
+      <div
+        class="fixed bottom-0 grid w-full grid-cols-1 px-8 md:grid-cols-3 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-30"
+      >
+        <div class="items-center justify-center mr-auto md:flex">
+          <a href="./index.html"><span class="text-s">Diego Pertuz</span></a>
+        </div>
+        <div class="flex items-center justify-center mx-auto whitespace-nowrap">
+          <button type="button" class="p-2.5 group rounded-full mr-4">
+            <a href="./aboutme.html">
+              <span>About me</span>
+            </a>
+          </button>
+          <button type="button" class="p-2 group rounded-full">
+            <span>Proyects</span>
+          </button>
+          <button
+            type="button"
+            class="p-2 group rounded-full hover:text-gray-200 mr-4"
+          >
+            <a href="./contact.html"><span>Contact</span></a>
+          </button>
+          <button
+            type="button"
+            class="p-2 group rounded-full hover:text-gray-200 mr-4"
+          >
+            <a href="./aboutme.html#content-tech-section">
+              <span>Technologies</span>
+            </a>
+          </button>
+          <button
+            type="button"
+            class="p-2 group rounded-full text-gray-500 mr-4 underline underline-offset-8"
+          >
+            <a href="./wits.html"><span>¿What is this?</span></a>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="content">
+      <main>
+        <div class="background-content">
+          <button class="button-pattern" disabled></button>
+
+          <section class="content-child">
+            <h1>¿what is this?</h1>
+            <p class="p-info">
+              The goal of my portfolio page is to showcase my personal
+              information, my role, and my projects in an environment and design
+              that I would like to present, inspired by
+              <a href="https://material.io/blog/announcing-material-you"
+                ><span style="color: #b96161">Material You.</span></a
+              >
+            </p>
+            <p class="p-info">
+              The name of the page is not important, but what matters is that it
+              conveys the purpose of displaying my work in a clean,
+              minimalistic, and simple way, with each section carefully crafted
+              to provide a seamless user experience. This project was developed
+              using JS, HTML, CSS, and Tailwind.
+            </p>
+          </section>
+
+          <footer>Made by Diego Pertuz</footer>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
