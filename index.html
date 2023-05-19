@@ -1,125 +1,166 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-auto">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Author: Diego.P,
-    Category: CV's,"
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/toggle.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/media_fixmain.css" />
-    <link rel="stylesheet" href="./sources/fonts/stylesheet.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>My portfolio</title>
+    <title>workFi</title>
   </head>
 
-  <body>
-    <header class="navbar sticky z-10 flex">
-      <div
-        class="fixed bottom-0 grid md:grid-cols-1 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 w-full"
-      >
-        <div class="flex nav-prop items-center justify-center">
-          <div class="buttons-nav whitespace-nowrap p-4">
-            <button
-              type="button"
-              class="group rounded-full hover:text-gray-200 mr-4"
+  <body class="light-mode">
+    <!-- Loader de la pagina -->
+    <div class="wrapper">
+      <div class="loader"></div>
+    </div>
+
+    <header>
+      <div class="row-container-mode settings-container">
+        <!-- Ciclos -->
+        <div class="input-container" style="display: none">
+          <label for="cycles-input">Pomodoro cycles </label>
+          <input id="cycles-input" type="number" />
+          <b class="tooltip">
+            <img
+              src="./img/icons/circle-info-solid.svg"
+              alt=""
+              class="info-logo"
+            />
+            <span class="tooltip-box"
+              >Un ciclo en un pomodoro se refiere al proceso completo de trabajo
+              y descanso.</span
             >
-              <a href="./html/aboutme.html">
-                <span>About me</span>
-              </a>
-            </button>
-            <button
-              type="button"
-              class="group rounded-full hover:text-gray-200 mr-4"
+          </b>
+        </div>
+
+        <!-- Worktime -->
+        <div class="input-container">
+          <button
+            class="button-mode-pom button-mode-selection-w"
+            id="mode-selection-work"
+          >
+            Work time
+          </button>
+          <input id="work-time" type="text" style="display: none" />
+          <!-- <b class="tooltip">
+            <img
+              class="info-logo"
+              src="./img/icons/circle-info-solid.svg"
+              alt=""
+            />
+            <span class="tooltip-box"
+              >Se refiere a la duración en la que te enfocas en una tarea
+              determinada antes de tomar un breve descanso.</span
             >
-              <a href="./html/proyects.html">
-                <span>Proyects</span>
-              </a>
-            </button>
-            <button
-              type="button"
-              class="group rounded-full hover:text-gray-200 mr-4"
+          </b> -->
+        </div>
+        <div class="input-container">
+          <button
+            class="button-mode-pom button-mode-selection-s"
+            id="mode-selection-short"
+          >
+            short break
+          </button>
+          <input id="break-time" type="text" style="display: none" />
+          <!-- <b class="tooltip">
+            <img
+              src="./img/icons/circle-info-solid.svg"
+              alt=""
+              class="info-logo"
+            />
+            <span class="tooltip-box"
+              >Se refiere al breve descanso que se toma después de completar un
+              período de trabajo de 25 minutos.</span
             >
-              <a href="./html/contact.html">
-                <span>Contact</span>
-              </a>
-            </button>
-            <button
-              type="button"
-              class="group rounded-full hover:text-gray-200"
+          </b> -->
+        </div>
+        <div class="input-container">
+          <button
+            class="button-mode-pom button-mode-selection-l"
+            id="mode-selection-long"
+          >
+            long break
+          </button>
+          <input id="rest-time" type="text" style="display: none" />
+          <!-- <b class="tooltip">
+            <img
+              src="./img/icons/circle-info-solid.svg"
+              alt=""
+              class="info-logo"
+            />
+            <span class="tooltip-box"
+              >El tiempo de descanso largo en un pomodoro se refiere al período
+              de descanso más prolongado que se toma después de completar cuatro
+              ciclos de trabajo y descanso.</span
             >
-              <a href="./html/wits.html"><span>¿What is this?</span></a>
+          </b> -->
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="pomodoro-container" id="mode">
+        <div class="row-container clock-container">
+          <h2 id="clock">25:00</h2>
+        </div>
+        <div class="buttons-options">
+          <div class="row-container resume-container">
+            <button id="resume-button" style="display: none">resume</button>
+          </div>
+          <div class="row-container start-container">
+            <button id="start-button" style="display: none block">start</button>
+          </div>
+          <div class="row-container pause-container">
+            <button id="pause-button" style="display: none block" disabled>
+              pause
             </button>
           </div>
         </div>
       </div>
-    </header>
-    <div class="content">
-      <main>
-        <div class="background-content">
-          <section class="content-child">
-            <h1>my portfolio</h1>
-            <p class="p-info">
-              Im a <span>Front-end developer</span> based in Colombia,
-              passionate about graphic design. Creating, pursuing minimalist
-              through my designs. <span>Working to make magic happen</span>
-            </p>
-            <a href="#content-blocks-section"
-              ><button class="button-reference">See all</button></a
-            >
+    </main>
 
-            <button class="button-pattern" disabled></button>
-          </section>
-
-          <section class="content-blocks" id="content-blocks-section">
-            <div>
-              <a href="./html/aboutme.html">
-                <button class="content-blocks-childs-wide">
-                  <p class="content-blocks-text">About me</p>
-                </button>
-              </a>
-              <a href="./html/contact.html">
-                <button class="content-blocks-childs">
-                  <p class="content-blocks-text">Contact me</p>
-                </button>
-              </a>
-              <a href="./html/wits.html"
-                ><button class="content-blocks-childs">
-                  <p class="content-blocks-text">¿What is this?</p>
-                </button></a
-              >
-            </div>
-            <div>
-              <a href="./html/proyects.html">
-                <button class="content-blocks-childs-big">
-                  <p class="content-blocks-text">Proyects</p>
-                </button>
-              </a>
-            </div>
-          </section>
-
-          <section class="content-info">
-            <h2>
-              Do you have a question, an idea, or a project you need help
-              with?Contact to me!
-            </h2>
-
-            <a target="_blank" href="https://www.linkedin.com/in/justtp/"
-              ><button>LinkedIn</button></a
-            >
-            <a target="_blank" href="https://github.com/imperta"
-              ><button>Github</button></a
-            >
-
-            <a target="_blank" href="#"><button>Twitter</button></a>
-            <a target="_blank" href="#"><button>Alura Profile</button></a>
-          </section>
-          <footer>Made by Diego Pertuz</footer>
+    <footer>
+      <div id="container">
+        <button id="reset-button" class="toast-button">reset</button>
+        <button class="toggle" id="button-mode">
+          <img class="active-d" src="./img/icons/moon-solid.svg" alt="" /><img
+            class="active-w"
+            src="./img/icons/sun-solid.svg"
+            alt=""
+          />
+        </button>
+      </div>
+      <!-- Menu Desplegable-->
+      <!-- <nav>
+        <span id="open-close">
+          <i class="bx bx-menu"></i>
+        </span>
+      </nav>
+      <aside id="aside">
+        <div class="container-svg">
+          <div><span>INTRO</span></div>
+          <div><span>INTRO</span></div>
+          <div><span>INTRO</span></div>
         </div>
-      </main>
-    </div>
+        <div class="container-svg">
+          <div><span>INTRO</span></div>
+          <div><span>INTRO</span></div>
+          <div><span>INTRO</span></div>
+        </div>
+        <div class="container-svg">
+          <div><span>INTRO</span></div>
+          <div><span>INTRO</span></div>
+          <div><span>INTRO</span></div>
+        </div>
+      </aside> -->
+    </footer>
   </body>
+  <script src="./js/logic.js"></script>
+  <script src="./js/toggle.js"></script>
+  <!-- <script src="../js/defaultvalues.js"></script> -->
 </html>

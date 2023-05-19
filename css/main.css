@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700;900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+/* CSS RESET */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Variables de algunos estilos repetitivos */
+:root {
+  --button-text-size: 1.4rem;
+  --button-padding: 1rem 2rem;
+}
+
+/* Estilos de pomodoro */
+.pomodoro-container {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+
+  padding: 2rem;
+  width: 20rem;
+  height: 15rem;
+  border-radius: 2rem;
+  background-color: #c2bdd3;
+  box-shadow: #000000 0.1rem 0.1rem 2rem;
+  /* text-align: center; */
+  /* Centrado de contenido */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Diseño de reloj */
+.clock-container {
+  margin-top: 1.7rem;
+}
+#clock {
+  padding: 1rem;
+  font-size: 5.7rem;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+/* Estilo de botones */
+.buttons-options {
+  display: flex;
+  justify-content: center;
+}
+.buttons-options button {
+  background-color: #8b879b;
+  color: #000000;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: var(--button-padding);
+  font-size: var(--button-text-size);
+  border-style: none;
+  font-weight: bolder;
+}
+.buttons-options button:hover {
+  background-color: #696674;
+}
+#start-button {
+  border-radius: 10px;
+  border-style: none;
+  font-weight: bolder;
+}
+#pause-button {
+  border-style: none;
+  border-radius: 10px;
+  font-weight: bolder;
+  display: none;
+}
+#resume-button {
+  border-radius: 10px;
+}
+#reset-button {
+  margin-right: 2rem;
+  padding: var(--button-padding);
+  font-size: var(--button-text-size);
+  color: var(--text-button-color);
+  cursor: pointer;
+  border-radius: 10px;
+  border-style: none;
+  background-color: var(--button-color);
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  transition: background-color 0.2s;
+  font-weight: bolder;
+}
+#reset-button:hover {
+  background-color: var(--button-color-hover);
+  color: var(--text-button-color-hover);
+}
+
+.row-container-mode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c2bdd3;
+
+  width: 32rem;
+  border-radius: 1rem;
+
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-mode-pom {
+  color: #000000;
+  font-weight: 700;
+  text-transform: lowercase;
+  border-style: none;
+  background: none;
+  cursor: pointer;
+  text-align: center;
+
+  font-size: 1.22rem;
+  letter-spacing: 1px;
+  margin: 1rem;
+  font-family: "Inter";
+  transition: background-color 0.5s ease-out;
+}
+
+.button-mode-selection-w.active {
+  border-radius: 1rem;
+  background-color: #8b879b;
+  color: #111111;
+}
+.button-mode-selection-s.active {
+  border-radius: 1rem;
+  background-color: #8b879b;
+  color: #111111;
+}
+.button-mode-selection-l.active {
+  border-radius: 1rem;
+  background-color: #8b879b;
+  color: #111111;
+}
+
+.button-mode-selection-w {
+  color: #000000;
+  padding: 0.7rem;
+}
+.button-mode-selection-s {
+  color: #000000;
+  padding: 0.7rem;
+}
+.button-mode-selection-l {
+  color: #000000;
+  padding: 0.7rem;
+}
+
+.info-logo {
+  height: 15px;
+  filter: invert();
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltip-box {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip box */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -6rem;
+  width: 200px; /* Ancho del cuadro donde esta el mensaje */
+
+  /* Fade in the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltip:hover .tooltip-box {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* input {
+  color: #ffffff;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  width: 35%;
+  border: none;
+  border-radius: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  outline-style: none;
+
+  font-size: 20px;
+  text-align: center;
+  transition: color 0.2s;
+} */
+
+/* Loader styles */
+.wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: #5d5b66;
+  display: grid;
+  place-items: center;
+  transition: opacity 1s, visibility 1s;
+}
+.fade {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Slide bar */
+:root {
+  --fondo-color: #181818;
+  --items-color: #202020;
+  --border-color: #383838;
+  --text-color: #e7e7e7;
+}
+
+/* footer {
+  font-size: 60%;
+} */
+
+/* footer nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  position: fixed;
+  border-bottom: 1px solid var(--border-color);
+} */
+nav span i {
+  color: #fff;
+  font-size: 2.7rem;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+aside {
+  background-color: var(--items-color);
+  width: 30rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: hidden;
+  margin-bottom: 59px;
+  transition: 0.4s;
+}
+
+aside:hover {
+  overflow-y: auto;
+}
+.desplegar {
+  transform: translateX(100%);
+}
+.container-svg {
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px;
+  color: var(--text-color);
+}
+
+.container-svg div {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.container-svg div:hover {
+  background-color: #303030;
+}
+
+.container-svg div span {
+  /* margin-left: 15px; */
+  font-size: 1.5rem;
+}
