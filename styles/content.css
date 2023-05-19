@@ -1,0 +1,196 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #e4dcbf;
+  font-family: "kyivtype_sanslight";
+}
+/* Contenedor principal */
+main {
+  padding-top: 12rem;
+}
+
+/* Barra de navegacion */
+.navbar {
+  position: absolute;
+  /* width: 90%; */
+  height: 4rem;
+}
+/* Contenedor de contenido */
+.content {
+  position: absolute;
+  top: 0%;
+  left: 40.2%;
+  transform: translate(-40%, -23%);
+  width: 85%;
+  height: 80%;
+}
+
+/* Button Pattern background */
+.button-pattern {
+  background-color: #a5a5a5;
+  opacity: 0.4;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #efe9d5 30px
+    ),
+    repeating-linear-gradient(#747c6855, #747c68);
+  padding: 5rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+}
+
+/* Contenido de bienvenida */
+.background-content {
+  padding: 5rem;
+  background-color: #efe9d5;
+  border-radius: 30px 30px 0px 0px;
+  height: 8%;
+  font-size: 1.6rem;
+}
+.background-content h1 {
+  margin-top: 2rem;
+  font-family: "kyivtype_sansbold";
+  font-size: 5rem;
+
+  /* Animacion de degradado */
+  background: linear-gradient(
+    to right,
+    #90917e 20%,
+    #a0aa7a 30%,
+    #b68276 70%,
+    #51705b 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-size: 500% auto;
+  animation: textShine 4s ease-in infinite alternate;
+}
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.background-content h2 {
+  margin-top: 2rem;
+  font-family: "kyivtype_sansbold";
+  font-size: 3rem;
+
+  /* Animacion de degradado */
+  background: linear-gradient(
+    to right,
+    #9258a0 20%,
+    #779cb4 30%,
+    #b96161 70%,
+    #615170 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-size: 500% auto;
+  animation: textShine 4s ease-in infinite alternate;
+}
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Button Example (IMG) background */
+.button-example {
+  background-color: #a5a5a5;
+  opacity: 0.7;
+  background-image: url("https://www.uifrommars.com/wp-content/uploads/2021/11/material-you.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 10rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  transition: opacity 0.5s;
+}
+.button-example:hover {
+  opacity: 1;
+}
+
+.content-tech-blocks img {
+  padding: 0.5rem;
+  height: 7rem;
+}
+.content-tech-blocks {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.tech-c {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.p-info {
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
+  padding: 0.5rem;
+  text-align: left;
+}
+.p-info-sub {
+  margin-right: 2rem;
+  text-align: left;
+}
+.background-content span {
+  font-family: "kyivtype_sansbold";
+}
+
+footer {
+  opacity: 0.6;
+  font-size: 1rem;
+  margin-top: 10rem;
+  z-index: 100;
+  text-align: center;
+}
+
+/*                      Proyects Styling                           */
+.button-preview {
+  background-color: #a5a5a5;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #efe9d5 30px
+    ),
+    repeating-linear-gradient(#747c6855, #747c68);
+  padding: 20rem;
+  width: 100%;
+  border-radius: 1.5rem;
+}
+.card {
+  padding: 5rem;
+  height: 17rem;
+}
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 2rem;
+}
+
+.background-content-p h1 {
+  margin-top: 1rem;
+  line-height: 100%;
+  font-size: 5rem;
+}
