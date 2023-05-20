@@ -176,9 +176,20 @@ footer {
   width: 100%;
   border-radius: 1.5rem;
 }
+/* worki button */
+.workfi-preview img {
+  border-radius: 1.5rem;
+  object-fit: cover;
+  height: 100%;
+}
+.workfi-preview {
+  background-color: #a5a5a5;
+  padding: 20rem;
+  border-radius: 1.5rem;
+}
 .card {
-  padding: 5rem;
-  height: 17rem;
+  padding: 0rem;
+  height: 15rem;
 }
 .cards {
   max-width: 1200px;
