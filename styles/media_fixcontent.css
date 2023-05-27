@@ -46,10 +46,6 @@
     padding: 0.7rem;
     text-align: left;
   }
-  .p-info-sub {
-    margin-right: 2rem;
-    text-align: left;
-  }
 
   footer {
     opacity: 0.6;
@@ -85,10 +81,6 @@
     margin-right: 1rem;
     margin-left: 1rem;
     padding: 0.7rem;
-    text-align: left;
-  }
-  .p-info-sub {
-    margin-right: 2rem;
     text-align: left;
   }
 
@@ -133,10 +125,6 @@
     padding: 0.7rem;
     text-align: left;
   }
-  .p-info-sub {
-    margin-right: 2rem;
-    text-align: left;
-  }
 
   footer {
     opacity: 0.6;
@@ -154,6 +142,10 @@
   }
   .cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .content-tech-blocks img {
+    display: flex;
+    height: 3rem;
   }
   .content {
     width: 90%;
@@ -177,10 +169,6 @@
     margin-right: 1rem;
     margin-left: 1rem;
     padding: 0.7rem;
-    text-align: left;
-  }
-  .p-info-sub {
-    margin-right: 2rem;
     text-align: left;
   }
 
@@ -214,31 +202,30 @@
   .content {
     width: 90%;
   }
+  .content-tech-blocks img {
+    display: flex;
+    height: 3rem;
+  }
   .background-content h1 {
     margin-top: 1rem;
     line-height: 100%;
     font-size: 3rem;
   }
   .background-content p {
-    padding-top: 0.6rem;
-    padding-right: 0.6rem;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
   }
   .background-content h2 {
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-family: "kyivtype_sansbold";
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .p-info {
     font-size: 1.2rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     padding: 0.7rem;
-    text-align: left;
-  }
-  .p-info-sub {
-    font-size: 1.2rem;
-    margin-right: 2rem;
     text-align: left;
   }
 
