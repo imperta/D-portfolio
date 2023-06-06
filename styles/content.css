@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap');
 
+a{
+  list-style: none;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -13,16 +17,37 @@ main {
 
 /* Barra de navegacion */
 .navbar {
+  z-index: 10;
+  position: sticky;
   font-family: 'Poppins', sans-serif;
-  position: absolute;
   /* width: 90%; */
   height: 5rem;
   color: #fffffe;
+  transition: .2s invert;
 }
 .navbar span:hover{
-  color: #b9c3cf;
-  transition: .2s color;
+  filter: invert(100%);
 }
+.navbar-content{
+  border-radius: 20px 20px 0px 0px;
+  backdrop-filter: blur(15px);
+  background-color: #ffffff0a;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.nav-prop{
+  display: flex;
+  justify-content: center;
+}
+.buttons-nav{
+  white-space: nowrap;
+  padding: 1.5rem;
+}
+.buttons-nav button{
+  margin-right: 1rem;
+}
+
 /* Contenedor de contenido */
 .content {
   position: absolute;
@@ -160,10 +185,11 @@ ul.content-tech-blocks {
 .p-info {
   color: #fffffe;
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 0rem;
   margin-right: 2.5rem;
   margin-left: 2.5rem;
   padding: 0.5rem;
+  padding-top: 0rem;
   text-align: left;
 }
 .background-content span {
@@ -225,11 +251,12 @@ footer {
 .cv-down {
   background-color: #01cda1;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   text-align: center;
   font-weight: 700;
+  width: 100%;
 }
 .cv-down:hover {
   background-color: #ffffff;
