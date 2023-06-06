@@ -1,19 +1,19 @@
 /*              Tamaño de pantallas  DE MAYOR A MENOR             */
 @media only screen and (max-width: 1600px) {
   .background-content h1 {
-    margin-top: 2rem;
+    margin-top: 1rem;
     line-height: 100%;
-    font-size: 5rem;
+    font-size: 6rem;
   }
   .background-content p {
-    padding-top: 2rem;
-    padding-right: 2rem;
+    padding-top:2rem;
+    margin-right: 9rem;
   }
 
   .button-reference {
     font-size: 1.5rem;
-    width: 30%;
-    margin-bottom: 10rem;
+    width: 50%;
+    margin-bottom: 7rem;
     margin-top: 2.5rem;
   }
 
@@ -21,10 +21,14 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    width: 0%;
+    width: 100%;
     justify-content: center;
   }
   .content-blocks-childs-big {
+    width: 100%;
+    height: 21.4rem;
+  }
+  .content-blocks-childs-big-1 {
     width: 100%;
     height: 21.4rem;
   }
@@ -63,30 +67,39 @@
 }
 @media only screen and (max-width: 1200px) {
   .background-content h1 {
-    margin-top: 2rem;
+    margin-top: 0rem;
     line-height: 100%;
     font-size: 5rem;
   }
   .background-content p {
     padding-top: 2rem;
-    padding-right: 2rem;
+    margin-right: 0rem;
+    padding-right: 0rem;
   }
-
   .button-reference {
     font-size: 1.5rem;
-    width: 30%;
-    margin-bottom: 10rem;
-    margin-top: 2.5rem;
+    width: 50%;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+  }
+  .button-pattern {
+    padding: 5rem;
+    width: 100%;
+    margin-bottom: 4rem;
   }
 
   .content-blocks {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    width: 0%;
+    width: 100%;
     justify-content: center;
   }
   .content-blocks-childs-big {
+    width: 100%;
+    height: 21.4rem;
+  }
+  .content-blocks-childs-big-1 {
     width: 100%;
     height: 21.4rem;
   }
@@ -125,30 +138,39 @@
 }
 @media only screen and (max-width: 992px) {
   .background-content h1 {
-    margin-top: 2rem;
+    margin-top: 0rem;
     line-height: 100%;
-    font-size: 5rem;
+    font-size: 5.6rem;
   }
   .background-content p {
     padding-top: 2rem;
-    padding-right: 2rem;
+    margin-right: 0rem;
+    padding-right: 0rem;
   }
-
   .button-reference {
     font-size: 1.5rem;
-    width: 40%;
-    margin-bottom: 10rem;
-    margin-top: 2.5rem;
+    width: 50%;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+  }
+  .button-pattern {
+    padding: 5rem;
+    width: 100%;
+    margin-bottom: 4rem;
   }
 
   .content-blocks {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    width: 0%;
+    width: 100%;
     justify-content: center;
   }
   .content-blocks-childs-big {
+    width: 100%;
+    height: 21.4rem;
+  }
+  .content-blocks-childs-big-1 {
     width: 100%;
     height: 21.4rem;
   }
@@ -174,7 +196,7 @@
     font-size: 2rem;
     background-color: #000000;
     color: #ffffff;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
   }
 
   footer {
@@ -187,20 +209,25 @@
 }
 @media only screen and (max-width: 768px) {
   .background-content h1 {
-    margin-top: 2rem;
+    margin-top: 0rem;
     line-height: 100%;
-    font-size: 5rem;
+    font-size: 3.4rem;
   }
   .background-content p {
     padding-top: 2rem;
-    padding-right: 2rem;
+    margin-right: 0rem;
+    padding-right: 0rem;
   }
-
   .button-reference {
     font-size: 1.5rem;
-    width: 30%;
-    margin-bottom: 10rem;
-    margin-top: 2.5rem;
+    width: 50%;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+  }
+  .button-pattern {
+    padding: 5rem;
+    width: 100%;
+    margin-bottom: 4rem;
   }
 
   .content-blocks {
@@ -225,8 +252,8 @@
 
   /* Contacto section */
   .content-info h2 {
-    margin-top: 10rem;
-    font-size: 3rem;
+    margin-top: 6rem;
+    font-size: 3.5rem;
     text-align: left;
     margin-bottom: 2rem;
     font-family: "kyivtype_sansbold";
@@ -237,51 +264,52 @@
     font-size: 2rem;
     background-color: #000000;
     color: #ffffff;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
 
   footer {
     opacity: 0.6;
     font-size: 1rem;
-    margin-top: 10rem;
+    margin-top: 6rem;
     z-index: 100;
     text-align: center;
   }
 }
 @media only screen and (max-width: 661px) {
   .background-content {
-    padding: 1.7rem;
+    padding:2rem;
     height: 8%;
     font-size: 1.6rem;
   }
   .background-content h1 {
     margin-top: 2rem;
     line-height: 100%;
-    font-size: 3.2rem;
+    font-size: 3.8rem;
   }
   .background-content p {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
+    margin-right: 0rem;
     padding-right: 0rem;
   }
 
   .button-reference {
     font-size: 1.5rem;
     width: 50%;
-    margin-bottom: 5rem;
-    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
   }
 
   .content-blocks {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    width: 100%;
+    width:100%;
   }
   .content-blocks-childs-big {
     width: 100%;
-    height: 21rem;
+    height: 17rem;
   }
-  .content-blocks-childs-wide {
+  .content-blocks-childs-big-1 {
     width: 100%;
     height: 17rem;
     border-radius: 1.5rem;
@@ -306,12 +334,12 @@
   .button-pattern {
     padding: 5rem;
     width: 100%;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
 
   /* Contacto section */
   .content-info h2 {
-    margin-top: 10rem;
+    margin-top: 5rem;
     font-size: 2.3rem;
     text-align: left;
     margin-bottom: 2rem;
@@ -320,13 +348,16 @@
     color: #ffffff;
   }
   .content-info button {
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: #000000;
     color: #ffffff;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
 
   footer {
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+    padding-top: 0rem;
     opacity: 0.6;
     font-size: 0.9rem;
     z-index: 100;
