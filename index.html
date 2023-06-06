@@ -12,20 +12,20 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/media_fixmain.css" />
     <link rel="stylesheet" href="./sources/fonts/stylesheet.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <title>My portfolio</title>
   </head>
 
   <body>
-    <header class="navbar sticky z-10 flex">
+    <header class="navbar">
       <div
-        class="fixed bottom-0 grid md:grid-cols-1 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 w-full"
+        class="navbar-content"
       >
-        <div class="flex nav-prop items-center justify-center">
-          <div class="buttons-nav whitespace-nowrap p-4">
+        <div class="nav-prop">
+          <div class="buttons-nav">
             <button
               type="button"
-              class="group mr-4"
+              class="button-nav"
             >
               <a href="./html/aboutme.html">
                 <span>About me</span>
@@ -33,7 +33,7 @@
             </button>
             <button
               type="button"
-              class="group mr-4"
+              class="button-nav"
             >
               <a href="./html/proyects.html">
                 <span>Proyects</span>
@@ -41,7 +41,7 @@
             </button>
             <button
               type="button"
-              class="group"
+              class="button-nav"
             >
               <a href="./html/wits.html"><span>¿What is this?</span></a>
             </button>
@@ -69,7 +69,7 @@
           <section class="content-blocks" id="content-blocks-section">
             <div>
               <a href="./html/aboutme.html">
-                <button class="content-blocks-childs-wide">
+                <button class="content-blocks-childs-big-1">
                   <p class="content-blocks-text">About me</p>
                 </button>
               </a>   
