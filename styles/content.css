@@ -219,16 +219,20 @@ footer {
   width: 100%;
   border-radius: 1.5rem;
 }
-/* worki button */
-.workfi-preview img {
+/* Proyects preview*/
+.protect-preview img {
   border-radius: 1.5rem;
   object-fit: cover;
   height: 100%;
 }
-.workfi-preview {
+.protect-preview {
   background-color: #a5a5a5;
   padding: 20rem;
   border-radius: 1.5rem;
+  transition: .3s opacity;
+}
+.protect-preview:hover{
+  opacity: 80%;
 }
 .card {
   padding: 0rem;
