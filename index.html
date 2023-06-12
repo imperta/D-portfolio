@@ -17,10 +17,18 @@
   <body>
     <header>
       <div class="navbar-container">
-        <button class="navbar-element"><a href="#proyects-section">About me</a></button>
-        <button class="navbar-element"><a href="#proyects-section">Proyects</a></button>
-        <button class="navbar-element"><a href="#contact-section">Get in touch</a></button>
-        <button class="navbar-element"><a href="#tc-stack">Tech stack</a></button>
+        <button class="navbar-element">
+          <a href="#ab-me-section">About me</a>
+        </button>
+        <button class="navbar-element">
+          <a href="#proyects-section">Proyects</a>
+        </button>
+        <button class="navbar-element">
+          <a href="#contact-section">Get in touch</a>
+        </button>
+        <button class="navbar-element">
+          <a href="#tc-stack">Tech stack</a>
+        </button>
       </div>
     </header>
 
@@ -29,13 +37,17 @@
       <div class="main-content-container">
         <div class="left-side">
           <h1>Hi, I’m Perta.</h1>
-          <p>
-            Im a <span>Front-end developer</span> and
-            <span>UI/UX Designer</span> based in Colombia, passionate about
-            graphic design. Creating, pursuing minimalist through my designs.
+
+          <p class="text-rol">
+            Im a <span class="typed-text"></span
+            ><span class="cursor blink"></span> based in Colombia, passionate
+            about graphic design. Creating, pursuing minimalist through my
+            designs.
             <span>Working to make magic happen</span>.
           </p>
-          <button class="sm-button"><a href="#proyects-section">Get started</a></button>
+          <a href="#proyects-section"
+            ><button class="gs-button">Get started</button></a
+          >
         </div>
 
         <div class="right-side">
@@ -48,12 +60,19 @@
         <div class="p-element">
           <h2>Proyects</h2>
           <div class="proyects-demo">
-            <button disabled="disabled" class="p-pattern"></button>
-            <button disabled="disabled" class="p-pattern"></button>
+            <a target="_blank" href="https://workfi-nu.vercel.app/"
+              ><button class="pomodoro"></button
+            ></a>
+            <a target="_blank" href="https://imperta.github.io/Textencrypter/"
+              ><button class="encrypter"></button
+            ></a>
+
             <button disabled="disabled" class="p-pattern"></button>
           </div>
         </div>
-        <button class="sm-button"><a href="./html/proyects.html">See more</a></button>
+        <a href="./html/proyects.html"
+          ><button class="sm-button">See more</button></a
+        >
       </div>
 
       <!-- About me  -->
@@ -79,8 +98,8 @@
         <div class="ab-element">
           <div class="parr-text">
             <p>
-              One of my biggest inspirations is Google's design system, Material
-              you. I love the way Material You uses clean and minimalist lines
+              One of my biggest inspirations is Google's design system, <a href="https://m3.material.io/">Material
+                you.</a> I love the way Material You uses clean and minimalist lines
               to create elegant and modern designs that adapt to the needs and
               preferences of each user. I strive to apply these same design
               principles in my proyects, creating websites with an attractive
@@ -97,7 +116,11 @@
               certificates I have obtained throughout my journey.
             </p>
           </div>
-          <button class="cv-button"><a href="./sources/pdf/mycv.pdf" download="Diego-Pertuz-CV">Download my CV</a></button>
+          <button class="cv-button">
+            <a href="./sources/pdf/mycv.pdf" download="Diego-Pertuz-CV"
+              >Download my CV</a
+            >
+          </button>
         </div>
       </div>
 
@@ -110,21 +133,21 @@
             the web development world, and I'm always looking for ways to
             improve and optimize my work.
           </p>
-          <p>Here's a list of the technologies and tools that I use:</p>
+          <p>Here's a list of the technologies that I use:</p>
         </div>
         <div class="ts-examples">
           <img
-            src="https://seeklogo.com/images/H/html5-logo-EF92D240D7-seeklogo.com.png"
+            src="./sources/img/svg/html5.svg"
             alt="html-logo"
             class="techstack-img"
           />
           <img
-            src="https://seeklogo.com/images/C/css3-logo-8724075274-seeklogo.com.png"
+            src="./sources/img/svg/css3-alt.svg"
             alt="css-logo"
             class="techstack-img"
           />
           <img
-            src="https://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png"
+            src="./sources/img/svg/square-js.svg"
             alt="js-logo"
             class="techstack-img"
           />
@@ -143,7 +166,33 @@
             alt="sass-logo"
             class="techstack-img"
           />
-          
+        </div>
+
+        <h2>Design Stack</h2>
+        <div class="parr-text">
+          <p>Here's some of the tools that I use:</p>
+        </div>
+        <div class="ts-examples">
+          <img
+            src="./sources/img/svg/figma.svg"
+            alt="figma-logo"
+            class="techstack-img"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/256/1/1781.png"
+            alt="photoshop-logo"
+            class="techstack-img"
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/121/121135.png"
+            alt="ilustrator-logo"
+            class="techstack-img"
+          />
+          <img
+            src="https://software.uniandes.edu.co/wp-content/uploads/2021/03/Logo-filmora-FINAL.png"
+            alt="filmora-logo"
+            class="techstack-img"
+          />
         </div>
       </div>
 
@@ -154,20 +203,29 @@
           <button>
             <img src="./sources/img/svg/Twitter.svg" alt="Twitter-logo" /><a
               href="https://twitter.com/ohjust_p"
-            ></a></button
-          ><button>
+            ></a>
+          </button>
+          <button>
             <img src="./sources/img/svg/github.svg" alt="Github-logo" /><a
               href="https://github.com/imperta"
-            ></a></button
-          ><button>
+            ></a>
+          </button>
+          <button>
             <img src="./sources/img/svg/LinkedIn.svg" alt="LinkedIn-logo" /><a
               href="https://www.linkedin.com/in/justtp/"
             ></a>
+          </button>
+          <button>
+            <img
+              src="https://cdn.freebiesupply.com/logos/large/2x/dribbble-icon-1-logo-png-transparent.png"
+              alt="Dribbble-logo"
+            /><a href="https://dribbble.com/Perta"></a>
           </button>
         </div>
       </div>
     </main>
 
-    <footer><span>Made by Perta</span></footer>
+    <footer><span>New features will coming soon - Made by Perta</span></footer>
+    <script src="./js/app.js"></script>
   </body>
 </html>

@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 a {
   color: #fff;
   text-decoration: none;
@@ -48,9 +51,34 @@ header {
   width: 24%;
 }
 
+/* Type animation */
+.cursor {
+  display: inline-block;
+  width: 3px;
+}
+.cursor.blink {
+  animation: blink 0.8s ease infinite;
+}
+.text-rol {
+  font-size: 2rem;
+}
+.typed-text {
+  font-size: 2rem;
+}
+@keyframes blink {
+  0%,
+  100% {
+    background: none;
+  }
+  40%,
+  50% {
+    background: transparent;
+  }
+}
+
 /* Main content */
 main {
-  transition: body ease .5s;
+  transition: body ease 0.5s;
   color: #fff;
   margin-top: 7rem;
   display: flex;
@@ -76,8 +104,9 @@ main h3 {
 .left-side {
   width: 45%;
 }
-.left-side h1{
-  font-size: 2.7rem;
+.left-side h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
   font-weight: 800;
 }
 
@@ -86,7 +115,7 @@ main h3 {
   color: #e6cc70;
 }
 
-.sm-button {
+.gs-button {
   margin-top: 1.3rem;
   padding: 1.2rem;
   width: 100%;
@@ -94,6 +123,12 @@ main h3 {
   background-color: #373737;
   font-size: 1.3rem;
   font-weight: 800;
+  transition: filter .2s;
+  color: #fff;
+  cursor: pointer;
+}
+.gs-button:hover{
+filter: invert(100%);
 }
 
 .pattern-background {
@@ -115,7 +150,7 @@ main h3 {
     );
   background-blend-mode: multiply;
 }
-.pattern-background:hover{
+.pattern-background:hover {
   background-blend-mode: exclusion;
 }
 
@@ -150,6 +185,51 @@ main h3 {
     );
   background-blend-mode: multiply;
 }
+.pomodoro {
+  margin: 1em;
+  background-image: url(../sources/img/png/worki-ss.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  width: 20rem;
+  height: 17rem;
+  cursor: pointer;
+  opacity: 70%;
+  transition: opacity 0.1s;
+}
+.pomodoro:hover {
+  opacity: 100%;
+}
+.encrypter {
+  margin: 1em;
+  background-image: url(../sources/img/png/encrypt-ss.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  width: 20rem;
+  height: 17rem;
+  cursor: pointer;
+  opacity: 70%;
+  transition: opacity 0.1s;
+}
+.encrypter:hover {
+  opacity: 100%;
+}
+.sm-button {
+  margin-top: 1.3rem;
+  padding: 1.2rem;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #373737;
+  font-size: 1.3rem;
+  font-weight: 800;
+  transition: filter .2s;
+  color: #fff;
+  cursor: pointer;
+}
+.sm-button:hover{
+  filter: invert(100%);
+  }
 
 /* About me section */
 .ab-container {
@@ -160,14 +240,19 @@ main h3 {
   width: 80%;
   margin-bottom: 1rem;
 }
-/* .ab-element{
-paddin
-} */
 .parr-text {
   padding: 0rem 3rem 0rem 3rem;
 }
 .parr-text p {
   font-size: 20px;
+}
+.parr-text span{
+  color: #95cbdb;
+  font-weight: 700;
+}
+.parr-text p a{
+  color: #dfaaf0;
+  font-weight: 700;
 }
 .material-y-example {
   margin: 1rem;
@@ -188,12 +273,16 @@ paddin
 }
 .cv-button {
   background-color: #373737;
-  background-color: #373737;
+  width: 60%;
   padding: 1.5rem;
   border-radius: 1rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  transition: filter .2s;
 }
+.cv-button:hover{
+  filter: invert(100%);
+  }
 
 /* Tech stack secton */
 .ts-container {
@@ -202,7 +291,7 @@ paddin
 }
 
 .ts-examples {
-  background-color: #373737;
+  background-color: #dfaaf0;
   padding: 1rem;
   border-radius: 2rem;
   margin-top: 2.77rem;
@@ -216,7 +305,6 @@ paddin
 .ts-examples img {
   width: 65px;
 }
-
 
 /* Contact w me section */
 .contact-elements {
@@ -243,15 +331,14 @@ paddin
   align-items: center;
 }
 
-
-footer{
+footer {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 3rem;
   margin-top: 3rem;
 }
-footer span{
+footer span {
   color: #fff;
   font-weight: 700;
 }

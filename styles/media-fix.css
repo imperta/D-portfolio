@@ -83,6 +83,16 @@
     width: 25rem;
     height: 15rem;
   }
+  .pomodoro {
+    margin: 0.5em;
+    width: 25rem;
+    height: 15rem;
+  }
+  .encrypter {
+    margin: 0.5em;
+    width: 25rem;
+    height: 15rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -110,6 +120,19 @@
   .navbar-container {
     width: 85%;
   }
+  .text-rol{
+    font-size: 1.4rem;
+  }
+  .typed-text{
+    font-size: 1.4rem;
+  }
+
+  .parr-text {
+    padding: 0rem 0rem 0rem 0rem;
+  }
+  .parr-text p {
+    font-size: 20px;
+  }
 
   /* Proyects section */
   .proyects-container {
@@ -125,6 +148,16 @@
     justify-content: center;
   }
   .p-pattern {
+    margin: 0.5em;
+    width: 30rem;
+    height: 14rem;
+  }
+  .pomodoro {
+    margin: 0.5em;
+    width: 30rem;
+    height: 14rem;
+  }
+  .encrypter {
     margin: 0.5em;
     width: 30rem;
     height: 14rem;
@@ -168,7 +201,7 @@
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 500px) {
   .main-content-container {
     margin: 2rem;
     width: 100%;
@@ -222,6 +255,16 @@
     justify-content: center;
   }
   .p-pattern {
+    margin: 0.5em;
+    width: 20rem;
+    height: 10rem;
+  }
+  .pomodoro {
+    margin: 0.5em;
+    width: 20rem;
+    height: 10rem;
+  }
+  .encrypter {
     margin: 0.5em;
     width: 20rem;
     height: 10rem;
@@ -292,7 +335,7 @@
     margin: 1rem;
   }
   .contact-elements img {
-    padding: 1.3rem;
-    width: 50px;
+    padding: 1rem;
+    width: 40px;
   }
 }
