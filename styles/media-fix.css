@@ -1,0 +1,298 @@
+@media only screen and (max-width: 1400px) {
+  /* Main content */
+  main {
+    margin-top: 4rem;
+  }
+  .main-content-container {
+    width: 90%;
+  }
+
+  .sm-button {
+    padding: 1.2rem;
+  }
+
+  .pattern-background {
+    width: 30rem;
+    height: 25rem;
+  }
+  .pattern-background:hover {
+    background-blend-mode: exclusion;
+  }
+
+  /* Proyects section */
+  .proyects-container {
+    width: auto;
+    margin-bottom: 8rem;
+  }
+
+  /* .p-element {
+      
+      } */
+
+  .proyects-demo {
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .p-pattern {
+    margin: 1em;
+    width: 20rem;
+    height: 17rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-content-container {
+    width: 90%;
+    margin-bottom: 12rem;
+  }
+
+  .left-side {
+    width: 55%;
+  }
+  .left-side h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+
+  .sm-button {
+    width: 80%;
+  }
+
+  .pattern-background {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .navbar-container {
+    width: 70%;
+  }
+
+  /* Proyects section */
+  .proyects-container {
+    width: 80%;
+    margin-bottom: 8rem;
+  }
+
+  .proyects-demo {
+    margin: 0.5em;
+  }
+  .p-pattern {
+    margin: 0.5em;
+    width: 25rem;
+    height: 15rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content-container {
+    width: 95%;
+    margin-bottom: 10rem;
+  }
+
+  .left-side {
+    width: 50%;
+  }
+  .left-side h1 {
+    font-size: 2.3rem;
+  }
+
+  .sm-button {
+    width: 80%;
+  }
+
+  .pattern-background {
+    width: 15rem;
+    height: 17rem;
+  }
+
+  .navbar-container {
+    width: 85%;
+  }
+
+  /* Proyects section */
+  .proyects-container {
+    width: 90%;
+    margin-bottom: 8rem;
+  }
+
+  .proyects-demo {
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .p-pattern {
+    margin: 0.5em;
+    width: 30rem;
+    height: 14rem;
+  }
+
+  /* Tech stack secton */
+  .ts-container {
+    width: 80%;
+    margin-bottom: 6rem;
+  }
+
+  .ts-examples {
+    background-color: #373737;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-top: 2.77rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .ts-examples img {
+    width: 45px;
+  }
+
+  /* Contact w me section */
+  .contact-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-elements button {
+    margin: 1rem;
+  }
+  .contact-elements img {
+    padding: 1.3rem;
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .main-content-container {
+    margin: 2rem;
+    width: 100%;
+    margin-bottom: 7rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .left-side {
+    width: 90%;
+    margin-bottom: 5rem;
+  }
+  .left-side h1 {
+    font-size: 2.3rem;
+  }
+  .left-side p {
+    font-size: 1.3rem;
+  }
+
+  .sm-button {
+    width: 100%;
+  }
+
+  .pattern-background {
+    display: flex;
+    justify-content: center;
+    width: 25rem;
+    height: 15rem;
+  }
+
+  .navbar-container {
+    width: 100%;
+  }
+  .navbar-element {
+    font-family: "Poppins";
+    font-size: 13px;
+  }
+
+  /* Proyects section */
+  .proyects-container {
+    width: 90%;
+    margin-bottom: 8rem;
+  }
+
+  .proyects-demo {
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .p-pattern {
+    margin: 0.5em;
+    width: 20rem;
+    height: 10rem;
+  }
+
+  /* About me section */
+  .ab-container {
+    width: 85%;
+    margin-bottom: 1rem;
+  }
+
+  .parr-text {
+    padding: 0rem 0.7rem 0rem 0.7rem;
+  }
+  .parr-text p {
+    font-size: 23px;
+  }
+  .material-y-example {
+    padding: 8rem;
+  }
+
+  /* Certifications section */
+  .c-element {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cv-button {
+    background-color: #373737;
+    background-color: #373737;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  /* Tech stack secton */
+  .ts-container {
+    width: 80%;
+    margin-bottom: 6rem;
+  }
+
+  .ts-examples {
+    background-color: #373737;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-top: 2.77rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .ts-examples img {
+    width: 45px;
+  }
+
+  /* Contact w me section */
+  .contact-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-elements button {
+    margin: 1rem;
+  }
+  .contact-elements img {
+    padding: 1.3rem;
+    width: 50px;
+  }
+}

@@ -4,70 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/content.css" />
-    <link rel="stylesheet" href="../styles/media_fixcontent.css" />
-    <link rel="stylesheet" href="../sources/fonts/stylesheet.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>My portfolio</title>
+    <meta
+      name="description"
+      content="Author: Diego.P,
+    Category: CV's,"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/media-fix.css" />
+    <title>My Proyects</title>
   </head>
 
   <body>
-    <header class="navbar">
-      <div
-      class="navbar-content"
-      >
-        <div class="nav-prop">
-          <div class="buttons-nav">
-            <button type="button">
-              <a href="../index.html">
-                <span
-                  >Diego Pertuz</span
-                >
-              </a>
-            </button>
-            <button
-              type="button"
-            >
-              <a href="./aboutme.html">
-                <span>About me</span>
-              </a>
-            </button>
-            <button
-              type="button"
-            >
-              <a href="./wits.html"><span>¿What is this?</span></a>
-            </button>
-          </div>
-        </div>
+    <header>
+      <div class="navbar-container">
+        <button class="navbar-element">
+          <a href="#proyects-section">About me</a>
+        </button>
+        <button class="navbar-element">
+          <a href="#proyects-section">Proyects</a>
+        </button>
+        <button class="navbar-element">
+          <a href="#contact-section">Get in touch</a>
+        </button>
+        <button class="navbar-element">
+          <a href="#tc-stack">Tech stack</a>
+        </button>
       </div>
     </header>
-    <div class="content">
-      <main>
-        <div class="background-content background-content-p">
-          <button class="button-pattern" disabled></button>
 
-          <section class="content-child">
-            <h1>my proyects</h1>
-            <div class="cards">
-              <a href="https://workfi-nu.vercel.app/" target="_blank"
-                ><button class="protect-preview card">
-                  <img src="../sources/img/worki-ss.png" alt="" /></button
-              ></a>
-              <a href="https://imperta.github.io/Textencrypter/" target="_blank"
-                ><button class="protect-preview card">
-                  <img src="../sources/img/encrypt-ss.png" alt="" /></button
-              ></a>
-              <a href="#"
-                ><button class="button-preview card" disabled>More soon</button
-              ></a>
-              <!-- <a href="#"
-                ><button class="button-preview card" disabled></button
-              ></a> -->
-            </div>
-          </section>
-          <footer>Made by Perta</footer>
+    <main>
+      <!-- Proyects -->
+      <div class="proyects-container" id="proyects-section">
+        <div class="p-element">
+          <h2>Proyects</h2>
+          <div class="proyects-demo">
+            <button disabled="disabled" class="p-pattern"></button>
+            <button disabled="disabled" class="p-pattern"></button>
+            <button disabled="disabled" class="p-pattern"></button>
+          </div>
         </div>
-      </main>
-    </div>
+        <button class="sm-button"><a href="#">See more</a></button>
+      </div>
+    </main>
+
+    <footer><span>Made by Perta</span></footer>
   </body>
 </html>
