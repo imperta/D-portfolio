@@ -25,10 +25,6 @@
     margin-bottom: 8rem;
   }
 
-  /* .p-element {
-      
-      } */
-
   .proyects-demo {
     margin: 1em;
     display: flex;
@@ -40,6 +36,8 @@
     width: 20rem;
     height: 17rem;
   }
+
+  
 }
 
 @media only screen and (max-width: 1200px) {
@@ -92,6 +90,31 @@
     margin: 0.5em;
     width: 25rem;
     height: 15rem;
+  }
+
+  .cert-container{
+    width: 100% !important;
+  }
+  
+  .cert-container div {
+    width: 83% !important;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding: 1rem;
+  }
+  
+  .cert-element {
+    margin: 1rem;
+  }
+  .cert-element img {
+    width: 40px;
+    height: 40px;
+    margin: .7rem;
+  }
+  .element-content-cert h4{
+    width: 100%;
+    font-size: 1rem;
   }
 }
 
@@ -161,6 +184,23 @@
     margin: 0.5em;
     width: 30rem;
     height: 14rem;
+  }
+
+  
+  .cert-container div {
+    width: 80% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  
+  .element-content-cert h4{
+    width: 90%;
+    font-size: 1.3rem;
   }
 
   /* Tech stack secton */
@@ -299,6 +339,41 @@
     border-radius: 1rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+  }
+
+  .cert-container{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cert-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: .5rem;
+  }
+  
+  .cert-element {
+    margin: 1rem;
+  }
+  .cert-element img {
+    width: 40px;
+    height: 40px;
+    margin: .7rem;
+  }
+  
+  .element-content-cert {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+  .element-content-cert h4{
+    width: 90%;
   }
 
   /* Tech stack secton */

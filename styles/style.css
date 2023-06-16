@@ -123,12 +123,12 @@ main h3 {
   background-color: #373737;
   font-size: 1.3rem;
   font-weight: 800;
-  transition: filter .2s;
+  transition: filter 0.2s;
   color: #fff;
   cursor: pointer;
 }
-.gs-button:hover{
-filter: invert(100%);
+.gs-button:hover {
+  filter: invert(100%);
 }
 
 .pattern-background {
@@ -223,13 +223,13 @@ filter: invert(100%);
   background-color: #373737;
   font-size: 1.3rem;
   font-weight: 800;
-  transition: filter .2s;
+  transition: filter 0.2s;
   color: #fff;
   cursor: pointer;
 }
-.sm-button:hover{
+.sm-button:hover {
   filter: invert(100%);
-  }
+}
 
 /* About me section */
 .ab-container {
@@ -246,11 +246,11 @@ filter: invert(100%);
 .parr-text p {
   font-size: 20px;
 }
-.parr-text span{
+.parr-text span {
   color: #95cbdb;
   font-weight: 700;
 }
-.parr-text p a{
+.parr-text p a {
   color: #dfaaf0;
   font-weight: 700;
 }
@@ -278,16 +278,53 @@ filter: invert(100%);
   border-radius: 1rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  transition: filter .2s;
+  transition: filter 0.2s;
 }
-.cv-button:hover{
+.cv-button:hover {
   filter: invert(100%);
-  }
+}
+.cert-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cert-container div {
+  width: 80% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  padding-left: 0rem;
+}
+
+.cert-element {
+  background-color: #000000;
+  margin: 1rem;
+  /* width: 6% !important; */
+}
+.cert-element img {
+  width: 45px;
+  height: 45px;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.element-content-cert {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+.element-content-cert h4{
+  width: 80%;
+}
 
 /* Tech stack secton */
 .ts-container {
   width: 80%;
   margin-bottom: 6rem;
+  padding-left: 0rem;
 }
 
 .ts-examples {
