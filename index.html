@@ -11,9 +11,11 @@
     />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/media-fix.css" />
+    <link rel="stylesheet" href="./styles/styled-components/menu-b.css" />
+    <link rel="stylesheet" href="./styles/styled-components/dark-mode.css" />
     <link
       rel="shortcut icon"
-      href="./sources/img/png/favicon-perta.jpg"
+      href="./sources/img/png/p-logo.png"
       type="image/x-icon"
     />
     <title>My portfolio</title>
@@ -21,258 +23,139 @@
 
   <body>
     <header>
-      <div class="navbar-container">
-        <button class="navbar-element">
-          <a href="#ab-me-section">About me</a>
-        </button>
-        <button class="navbar-element">
-          <a href="#proyects-section">Proyects</a>
-        </button>
-        <button class="navbar-element">
-          <a href="#contact-section">Get in touch</a>
-        </button>
-        <button class="navbar-element">
-          <a href="#tc-stack">Tech stack</a>
+      <div class="navbar-main-container">
+        <a href="./index.html"
+          ><img
+            src="./sources/img/png/p-logo.png"
+            alt=".page-logo"
+            class="page-logo"
+        /></a>
+        <div class="navbar-container" id="menu">
+          <button class="navbar-element">
+            <a href="./html/about.html">About</a>
+          </button>
+          <button class="navbar-element">
+            <a href="#">Blog</a>
+          </button>
+          <div class="dropdown">
+            <button class="dropbtn navbar-element">Work</button>
+            <div class="dropdown-content">
+              <a href="./html/py-dev.html">Development</a>
+              <a href="./html/py-desg.html">Design</a>
+            </div>
+          </div>
+          <!-- <div class="dropdown">
+            <button class="dropbtn navbar-element">More</button>
+            <div class="dropdown-content">
+              <a href="#">Contact Me</a>
+              <a href="#">FAQ</a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="burger-menu-container">
+        <a href="./index.html"
+          ><img
+            src="./sources/img/png/p-logo.png"
+            alt=".page-logo"
+            class="page-logo"
+        /></a>
+        <ul class="menu-burger">
+          <li><a class="menuItem" href="./html/about.html">About</a></li>
+          <li><a class="menuItem" href="#">Blog</a></li>
+          <li><a class="menuItem" href="./html/py-dev.html">Development</a></li>
+          <li><a class="menuItem" href="./html/py-desg.html">Design</a></li>
+         <!-- r<li><a class="menuItem" href="#">More</a></li> -->
+        </ul>
+        <button class="hamburger">
+          <img
+            class="menuIcon material-icons"
+            src="./sources/img/svg/menu_black_24dp.svg"
+            alt="menu-button-icon"
+          />
+          <img
+            class="closeIcon material-icons"
+            src="./sources/img/svg/close_black_24dp.svg"
+            alt="close-button-icon"
+          />
         </button>
       </div>
     </header>
 
     <main>
-      <!-- Home page -->
-      <div class="main-content-container">
-        <div class="left-side">
-          <h1>Hi, I’m Perta.</h1>
-
-          <p class="text-rol">
-            Im a <span class="typed-text"></span
-            ><span class="cursor blink"></span> based in Colombia, passionate
-            about graphic design. Creating, pursuing minimalist through my
-            designs. <span>Working to make magic happen</span>.
-          </p>
-          <a href="#proyects-section"
-            ><button class="gs-button">Get started</button></a
-          >
-        </div>
-
-        <div class="right-side">
-          <button disabled="disabled" class="pattern-background"></button>
+      <!-- Hero -->
+      <div class="hero-container">
+        <div class="hero-elements">
+          <div class="title-elements main-elements">
+            <h1>Developer by necessity,</h1>
+            <span>designer by passion.</span>
+          </div>
+          <div class="outer-ring-main center"></div>
         </div>
       </div>
 
-      <!-- Proyects -->
-      <div class="proyects-container" id="proyects-section">
-        <div class="p-element">
-          <h2>Proyects</h2>
-          <div class="proyects-demo">
-            <a target="_blank" href="https://workfi-nu.vercel.app/"
-              ><button class="pomodoro"></button
-            ></a>
-            <a target="_blank" href="https://imperta.github.io/Textencrypter/"
-              ><button class="encrypter"></button
-            ></a>
-
-            <button disabled="disabled" class="p-pattern"></button>
-          </div>
-        </div>
-        <a href="./html/proyects.html"
-          ><button class="sm-button">See more</button></a
-        >
-      </div>
-
-      <!-- About me  -->
-      <div class="ab-container" id="ab-me-section">
-        <div class="ab-element">
-          <h2>About me</h2>
-          <div class="parr-text">
-            <h3>¿who am i?</h3>
-            <p>
-              My name is <span>Diego Pertuz Hernandez</span>, but you could call
-              me <span>Perta</span>. I'm 17 years old and I'm from Colombia.
-              Currently, I'm in high school (11th grade).
-            </p>
-            <p>
-              My passion for <span>Technology</span> and
-              <span>Graphic Design</span> since an early age has allowed me to
-              develop skills in UI/UX, Photo and Video editing. Enabling me to
-              create functional websites with an attractive user interface.
-            </p>
-          </div>
-        </div>
-        <button class="material-y-example" disabled>s</button>
-        <div class="ab-element">
-          <div class="parr-text">
-            <p>
-              One of my biggest inspirations is Google's design system,
-              <a href="https://m3.material.io/">Material you.</a> I love the way
-              Material You uses clean and minimalist lines to create elegant and
-              modern designs that adapt to the needs and preferences of each
-              user. I strive to apply these same design principles in my
-              proyects, creating websites with an attractive and functional user
-              interface.
-            </p>
-          </div>
-        </div>
-        <div class="c-element">
-          <div class="parr-text">
-            <h3>Certifications</h3>
-            <p>
-              I have had the opportunity to participate in various Front-End
-              focused courses and bootcamps, and here you can find a list of the
-              certificates I have obtained throughout my journey.
-            </p>
-          </div>
-          <div class="cert-container">
-            <div>
-              <a href="https://app.aluracursos.com/degree/certificate/ab554a5a-4d99-4f85-af88-d983615ef955"
-               target="_blank"><div class="cert-element">
-                <div class="element-content-cert">
-                  <h4>Formación Principiante en Programación G5 - ONE</h4>
-                  <span>17 - Apr - 23</span>
-                </div>
-                <img
-                  src="./sources/img/png/alura-logo.png"
-                  alt="alura-logo"
-                /></div
-            ></a>
-            <a href="https://app.aluracursos.com/degree/certificate/a4a33117-18af-4739-9392-273c7cdf840c" target="_blank">
-              <div class="cert-element">
-                <div class="element-content-cert">
-                  <h4>Formación Desarrollo Personal G5 - ONE</h4>
-                  <span>17 - Apr - 23</span>
-                </div>
-                <img src="./sources/img/png/alura-logo.png" alt="alura-logo" />
-              </div>
-            </a>
-            <a href="https://app.aluracursos.com/certificate/38de3809-9fb0-43b6-8bbe-2ad4d65a263d" target="_blank">
-              <div class="cert-element">
-                <div class="element-content-cert">
-                  <h4>Git y GitHub: controle y comparta su código </h4>
-                  <span>17 - Apr - 23</span>
-                </div>
-                <img src="./sources/img/png/alura-logo.png" alt="alura-logo" />
-              </div>
-            </a>
-            </div>
-          <button class="cv-button">
-            <a href="./sources/pdf/mycv.pdf" download="Diego-Pertuz-CV"
-              >Download my CV</a
-            >
-          </button>
-        </div>
-      </div>
-
-      <!-- Tech stack  -->
-      <div class="ts-container" id="tc-stack">
-        <h2>Tech Stack</h2>
-        <div class="parr-text">
-          <p>
-            I strive to stay updated with the latest technologies and tools in
-            the web development world, and I'm always looking for ways to
-            improve and optimize my work.
-          </p>
-          <p>Here's a list of the technologies that I use:</p>
-        </div>
-        <div class="ts-examples">
-          <img
-            src="./sources/img/svg/html5.svg"
-            alt="html-logo"
-            class="techstack-img"
-          />
-          <img
-            src="./sources/img/svg/css3-alt.svg"
-            alt="css-logo"
-            class="techstack-img"
-          />
-          <img
-            src="./sources/img/svg/square-js.svg"
-            alt="js-logo"
-            class="techstack-img"
-          />
-        </div>
-        <div class="ts-examples">
-          <img
-            src="https://seeklogo.com/images/B/bootstrap-5-logo-85A1F11F4F-seeklogo.com.png"
-            alt="boostrap-logo"
-            class="techstack-img"
-          />
-          <img
-            src="https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png"
-            alt="tailwind-logo"
-            class="techstack-img"
-          />
-          <img
-            src="https://sass-lang.com/assets/img/styleguide/seal-color-reversed-c50d9b78.png"
-            alt="sass-logo"
-            class="techstack-img"
-          />
-        </div>
-
-        <h2>Design Stack</h2>
-        <div class="parr-text">
-          <p>Here's some of the tools that I use:</p>
-        </div>
-        <div class="ts-examples">
-          <img
-            src="./sources/img/svg/figma.svg"
-            alt="figma-logo"
-            class="techstack-img"
-          />
-          <img
-            src="https://cdn-icons-png.flaticon.com/256/1/1781.png"
-            alt="photoshop-logo"
-            class="techstack-img"
-          />
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/121/121135.png"
-            alt="ilustrator-logo"
-            class="techstack-img"
-          />
-          <img
-            src="https://software.uniandes.edu.co/wp-content/uploads/2021/03/Logo-filmora-FINAL.png"
-            alt="filmora-logo"
-            class="techstack-img"
-          />
-        </div>
-      </div>
-
-      <!-- Contact w me  -->
-      <div class="contact-container" id="contact-section">
-        <div class="parr-text"><h2>Contact with me</h2></div>
-        <div class="contact-elements">
-          <a href="https://twitter.com/ohjust_p" target="_blank"
+      <section class="presentation-container">
+        <img src="" alt="" />
+        <h2>Hi, I’m Perta.</h2>
+        <p>
+          Im a
+          <b
+            ><span class="typed-text"></span><span class="cursor blink"></span
+          ></b>
+          based in Colombia, passionate about graphic design. Creating, pursuing
+          minimalist through my designs.
+        </p>
+        <span class="topic"> <b>Working to make magic happen.</b></span>
+      </section>
+      <section class="contact-container">
+        <h2>Contact with me</h2>
+        <div class="buttons-selection">
+          <a href="#" target="_blank"
             ><button>
               <img
                 src="./sources/img/svg/Twitter.svg"
                 alt="Twitter-logo"
               /></button
           ></a>
-
-          <a href="https://github.com/imperta" target="_blank">
+          <a href="#" target="_blank">
             <button>
-              <img
-                src="./sources/img/svg/github.svg"
-                alt="Github-logo"
-              /></button
-          ></a>
-          <a href="https://www.linkedin.com/in/justtp/" target="_blank"
+              <img src="./sources/img/svg/github.svg" alt="github-logo" />
+            </button>
+          </a>
+          <a href="#" target="_blank"
             ><button>
               <img
                 src="./sources/img/svg/LinkedIn.svg"
                 alt="LinkedIn-logo"
               /></button
           ></a>
-          <a href="https://dribbble.com/Perta" target="_blank"
-            ><button>
-              <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/dribbble-icon-1-logo-png-transparent.png"
-                alt="Dribbble-logo"
-              /></button
-          ></a>
         </div>
-      </div>
+      </section>
+
+      <span class="disclaimer"
+        >New features will coming soon - Made by Perta 2023</span
+      >
     </main>
 
-    <footer><span>New features will coming soon - Made by Perta</span></footer>
+    <footer>
+      <div id="container" class="container-footer-b">
+        <button class="toggle" id="button-mode">
+          <img
+            class="active-d"
+            src="./sources/img/svg/dark_mode_black_24dp.svg"
+            alt="dark-mode-logo"
+          />
+          <img
+            class="active-w"
+            src="./sources/img/svg/light_mode_white_24dp.svg"
+            alt="light-mode-logo"
+          />
+        </button>
+      </div>
+    </footer>
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/toggle-bg.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>

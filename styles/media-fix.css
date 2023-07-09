@@ -1,414 +1,66 @@
-@media only screen and (max-width: 1400px) {
-  /* Main content */
-  main {
-    margin-top: 4rem;
+@media only screen and (max-width: 1000px) {
+  /* and (max-width: 530px) */
+  header {
+    width: 75%;
   }
-  .main-content-container {
-    width: 90%;
-  }
-
-  .sm-button {
-    padding: 1.2rem;
-  }
-
-  .pattern-background {
-    width: 30rem;
-    height: 25rem;
-  }
-  .pattern-background:hover {
-    background-blend-mode: exclusion;
-  }
-
-  /* Proyects section */
-  .proyects-container {
-    width: auto;
-    margin-bottom: 8rem;
-  }
-
-  .proyects-demo {
-    margin: 1em;
+  .navbar-main-container {
     display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: -7%;
     align-items: center;
-    justify-content: center;
+    margin: 0rem 0rem 0rem 8rem;
   }
-  .p-pattern {
-    margin: 1em;
-    width: 20rem;
-    height: 17rem;
-  }
-
-  
-}
-
-@media only screen and (max-width: 1200px) {
-  .main-content-container {
-    width: 90%;
-    margin-bottom: 12rem;
-  }
-
-  .left-side {
-    width: 55%;
-  }
-  .left-side h1 {
-    font-size: 2.5rem;
-    font-weight: 800;
-  }
-
-  .sm-button {
-    width: 80%;
-  }
-
-  .pattern-background {
-    width: 20rem;
-    height: 20rem;
-  }
-
-  .navbar-container {
-    width: 70%;
-  }
-
-  /* Proyects section */
-  .proyects-container {
-    width: 80%;
-    margin-bottom: 8rem;
-  }
-
-  .proyects-demo {
-    margin: 0.5em;
-  }
-  .p-pattern {
-    margin: 0.5em;
-    width: 25rem;
-    height: 15rem;
-  }
-  .pomodoro {
-    margin: 0.5em;
-    width: 25rem;
-    height: 15rem;
-  }
-  .encrypter {
-    margin: 0.5em;
-    width: 25rem;
-    height: 15rem;
-  }
-
-  .cert-container{
-    width: 100% !important;
-  }
-  
-  .cert-container div {
-    width: 83% !important;
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    padding: 1rem;
-  }
-  
-  .cert-element {
-    margin: 1rem;
-  }
-  .cert-element img {
-    width: 40px;
-    height: 40px;
-    margin: .7rem;
-  }
-  .element-content-cert h4{
-    width: 100%;
-    font-size: 1rem;
+  .page-logo {
+    width: 60px;
+    border-radius: 5rem;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .main-content-container {
-    width: 95%;
-    margin-bottom: 10rem;
+@media only screen and (max-width: 900px) {
+  header {
+    width: 100%;
+  }
+  .navbar-main-container {
+    display: none;
+  }
+  .burger-menu-container {
+    display: block;
   }
 
-  .left-side {
-    width: 50%;
-  }
-  .left-side h1 {
-    font-size: 2.3rem;
+  .presentation-container p {
+    width: 20rem !important;
   }
 
-  .sm-button {
-    width: 80%;
+  section p {
+    width: 85% !important;
   }
-
-  .pattern-background {
-    width: 15rem;
-    height: 17rem;
+  section img {
+    width: calc(70% + 20px);
   }
-
-  .navbar-container {
-    width: 85%;
+  .main-elements {
+    left: 5rem;
   }
-  .text-rol{
-    font-size: 1.4rem;
+  .title-elements h1 {
+    width: 35rem;
   }
-  .typed-text{
-    font-size: 1.4rem;
+  .title-elements {
+    top: 2rem;
+    left: calc(100% - 430px);
   }
-
-  .parr-text {
-    padding: 0rem 0rem 0rem 0rem;
+  .other h1 {
+    width: 35rem;
+    position: absolute;
+    left: -3rem;
+    top: 3rem;
   }
-  .parr-text p {
-    font-size: 20px;
-  }
-
-  /* Proyects section */
-  .proyects-container {
-    width: 90%;
-    margin-bottom: 8rem;
-  }
-
-  .proyects-demo {
-    margin: 0.5em;
-    display: flex;
+  .cards-show-main {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .p-pattern {
-    margin: 0.5em;
-    width: 30rem;
-    height: 14rem;
-  }
-  .pomodoro {
-    margin: 0.5em;
-    width: 30rem;
-    height: 14rem;
-  }
-  .encrypter {
-    margin: 0.5em;
-    width: 30rem;
-    height: 14rem;
-  }
-
-  
-  .cert-container div {
-    width: 80% !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  
-  .element-content-cert h4{
-    width: 90%;
-    font-size: 1.3rem;
-  }
-
-  /* Tech stack secton */
-  .ts-container {
-    width: 80%;
-    margin-bottom: 6rem;
-  }
-
-  .ts-examples {
-    padding: 1rem;
-    border-radius: 2rem;
-    margin-top: 2.77rem;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  .ts-examples img {
-    width: 45px;
-  }
-
-  /* Contact w me section */
-  .contact-elements {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .contact-elements button {
-    margin: 1rem;
-  }
-  .contact-elements img {
-    padding: 1.3rem;
-    width: 50px;
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .main-content-container {
-    margin: 2rem;
-    width: 100%;
-    margin-bottom: 7rem;
-    display: flex;
-    align-items: center;
+@media only screen and (max-width: 450px){
+  .buttons-selection{
     flex-direction: column;
-  }
-
-  .left-side {
-    width: 90%;
-    margin-bottom: 5rem;
-  }
-  .left-side h1 {
-    font-size: 2.3rem;
-  }
-  .left-side p {
-    font-size: 1.3rem;
-  }
-
-  .sm-button {
-    width: 100%;
-  }
-
-  .pattern-background {
-    display: flex;
-    justify-content: center;
-    width: 25rem;
-    height: 15rem;
-  }
-
-  .navbar-container {
-    width: 100%;
-  }
-  .navbar-element {
-    font-family: "Poppins";
-    font-size: 13px;
-  }
-
-  /* Proyects section */
-  .proyects-container {
-    width: 90%;
-    margin-bottom: 8rem;
-  }
-
-  .proyects-demo {
-    margin: 0.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .p-pattern {
-    margin: 0.5em;
-    width: 20rem;
-    height: 10rem;
-  }
-  .pomodoro {
-    margin: 0.5em;
-    width: 20rem;
-    height: 10rem;
-  }
-  .encrypter {
-    margin: 0.5em;
-    width: 20rem;
-    height: 10rem;
-  }
-
-  /* About me section */
-  .ab-container {
-    width: 85%;
-    margin-bottom: 1rem;
-  }
-
-  .parr-text {
-    padding: 0rem 0.7rem 0rem 0.7rem;
-  }
-  .parr-text p {
-    font-size: 23px;
-  }
-  .material-y-example {
-    padding: 8rem;
-  }
-
-  /* Certifications section */
-  .c-element {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .cv-button {
-    background-color: #373737;
-    background-color: #373737;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-  }
-
-  .cert-container{
-    width: 100% !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .cert-container div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: .5rem;
-  }
-  
-  .cert-element {
-    margin: 1rem;
-  }
-  .cert-element img {
-    width: 40px;
-    height: 40px;
-    margin: .7rem;
-  }
-  
-  .element-content-cert {
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-  }
-  .element-content-cert h4{
-    width: 90%;
-  }
-
-  /* Tech stack secton */
-  .ts-container {
-    width: 80%;
-    margin-bottom: 6rem;
-  }
-
-  .ts-examples {
-    padding: 1rem;
-    border-radius: 2rem;
-    margin-top: 2.77rem;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  .ts-examples img {
-    width: 45px;
-  }
-
-  /* Contact w me section */
-  .contact-elements {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .contact-elements button {
-    margin: 1rem;
-  }
-  .contact-elements img {
-    padding: 1rem;
-    width: 40px;
   }
 }

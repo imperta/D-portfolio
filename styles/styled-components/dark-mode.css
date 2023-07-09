@@ -1,0 +1,55 @@
+/* Estilos boton de modos de pantalla */
+footer{
+  position: sticky;
+  bottom: 6rem;  
+  margin: 0rem 3.5rem 0rem 0rem;
+  z-index: 100;
+}
+
+.toggle {
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  width: 3.7rem;
+  height: 3.7rem;
+  background-color: #ffffff;
+  border-radius: 5rem;
+  box-shadow: 3px 3px 8px #5a5a5a, -3px -3px 8px #8f8f8f;
+  cursor: pointer;
+  transition: background-color, filter 0.3s;
+}
+
+.toggle:hover {
+  filter: invert(100%);
+  box-shadow: 3px 3px 8px #616161;
+}
+
+
+.active-d {
+  height: 25px;
+}
+.active-w {
+  height: 25px;
+  filter: invert(100%);
+}
+.active-white{
+display: none;
+}
+
+
+.light-mode {
+    transition:  0.4s;
+  background-color: #f7f4f5;
+}
+
+.active-bg {
+    color: #ffffff;
+  background-color: #1b1b1b;
+  transition: 0.4s;
+}
+.active-bg a{
+  color: #ffffff;
+}
